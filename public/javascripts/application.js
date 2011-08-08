@@ -43,6 +43,8 @@ $(function(){
   $(".oembed").oembed(null,
     {
       embedMethod:"append", maxWidth:"240",
+      vimeo: { wmode: "transparent"},
+      youtube: { wmode: "transparent"},      
       afterEmbed: function(oembedData) {
         $container.imagesLoaded(function(){
           $container.masonry( 'reload' );})
