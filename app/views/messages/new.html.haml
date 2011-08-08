@@ -4,8 +4,8 @@
 
 %ul#categories.options
   - Category.all.each do |c|
-    %li= link_to c.name, ""
+    %li= link_to c.name, "", :rel => c.id
 
 = render 'form'
 
-= link_to 'Back', messages_path
+= link_to 'Regresar', messages_path

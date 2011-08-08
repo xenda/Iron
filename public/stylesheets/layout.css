@@ -15,7 +15,7 @@ body {
 }
 
 div.input {
-	width: 700px;
+	width: 600px;
 }
 
 div.input.select.required {
@@ -92,18 +92,20 @@ ul#categories li {
 
 ul#categories li a {
 	display: block;
-	width: 81px;
-	height: 36px;
+	width: 78px;
+	height: 30px;
 	padding: 10px;
 	padding-top: 25px;
 	text-decoration: none;
 	font-family: 'Droid Serif', arial, serif; 
 	font-size: 14px;
-	background: #f0f0f0 url(../images/cat_back.png) 1px center;
+	background: #f0f0f0 url(../images/cat_back.png) -1px center;
 	color: #91322c;
 	text-align: center;
-	-webkit-transform: rotate(-3deg);
-	-moz-transform: rotate(-3deg);
+			-webkit-box-shadow: 0px 0px 1px 0px #6f493a;
+-moz-box-shadow: 0px 0px 1px 0px #6f493a;
+box-shadow: 0px 0px 1px 0px #6f493a;
+
 }
 ul#categories li a:hover {
 	background-color: #e4e4e4;
@@ -436,7 +438,8 @@ div.meta_data {
 }
 
 #categories li a {
-	
+	margin-left: 5px;
+	margin-right: 10px;
 }
 
 .message input#vote_submit.button {
@@ -501,13 +504,23 @@ div.send_us {
 	width: 100%;
 	text-align: center;
 	padding: 10px 0px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	background-color: #ffe3bf;
 	font-family: Arial, Helvetica, Geneva, sans-serif;
 	color: #b82d13;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+	color: #0352a7;
+	margin-top: 20px;
 }
 .send_us a {
 	text-align: center;
 	color: #922228;
 }
-
+a:hover {
+	background-color: transparent;
+}

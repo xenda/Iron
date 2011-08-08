@@ -19,7 +19,9 @@ $(function(){
   });
 
   $("ul.options li a").click(function(){
-    index = $("ul.options li a").index(this)
+    // index = $("ul.options li a").index(this)
+    $("#message_category_id").val($(this).attr('rel'));
+    return false;
   });
 
 
