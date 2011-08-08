@@ -1,26 +1,17 @@
 /* @override 
 	http://kato.dev/stylesheets/layout.css?1308524046
 	http://kato.dev/stylesheets/layout.css
-
+	http://localhost:3000/stylesheets/layout.css
 */
-
+html {
+	width: 710px;
+}
 body {
-	background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.2, rgb(28,49,77)),
-    color-stop(0.5, rgb(43,88,143))
-);
-background-image: -moz-linear-gradient(
-    center bottom,
-    rgb(28,49,77) 20%,
-    rgb(43,88,143) 50%
-);
+	background-image: url(../images/background.jpg);
 
 	margin: 0px;
 	padding: 10px;
-
+	width: 710px;
 }
 
 div.input {
@@ -88,7 +79,9 @@ margin-top: 10px;
 
 ul#categories {
 	padding: 0px;	
-	overflow: auto;
+	overflow: hidden;
+	height: 80px;
+	margin-top: 20px;
 }
 
 ul#categories li {
@@ -99,17 +92,22 @@ ul#categories li {
 
 ul#categories li a {
 	display: block;
-	width: 60px;
-	height: 30px;
+	width: 81px;
+	height: 36px;
 	padding: 10px;
-	padding-top: 20px;
+	padding-top: 25px;
 	text-decoration: none;
-	background-color: #f0f0f0;
 	font-family: 'Droid Serif', arial, serif; 
-	font-size: 16px;
+	font-size: 14px;
+	background: #f0f0f0 url(../images/cat_back.png) 1px center;
+	color: #91322c;
+	text-align: center;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
 }
 ul#categories li a:hover {
 	background-color: #e4e4e4;
+	opacity: 0.7;
 }
 ul#categories li a:active {
 	background-color: #d8d8d8;
@@ -322,8 +320,8 @@ textarea#message_content.text.optional {
 	margin-right: 10px;	
 	padding: 4px 8px;
 	font-size: 11px;
-	background-color: #fffeff;
-	color: #24628f;
+	background-color: #e3cbc0;
+	color: #96525a;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px
@@ -419,15 +417,26 @@ ul#messages_list li {
 	float: left;
 	margin-right: 20px;
 	padding: 10px;
-	width: 240px;
-		-webkit-box-shadow: 0px 0px 10px 0px #ccd6e3;
--moz-box-shadow: 0px 0px 10px 0px #ccd6e3;
-box-shadow: 0px 0px 10px 0px #ccd6e3;
-	/*background-color: #ccd6e3;*/
-		background-color: #eef6fb;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	width: 280px;
+	
+		-webkit-box-shadow: 0px 0px 1px 0px #6f493a;
+-moz-box-shadow: 0px 0px 1px 0px #6f493a;
+box-shadow: 0px 0px 1px 0px #6f493a;
 	list-style-type: none;
 	margin-bottom: 20px;
 	overflow: hidden;
+	background: rgba(111,73,58,0.48) url(../images/message_back.png) 260px -26px;
+}
+
+div.meta_data {
+	overflow: auto;
+	margin-top: 20px;	
+}
+
+#categories li a {
+	
 }
 
 .message input#vote_submit.button {
@@ -446,25 +455,59 @@ box-shadow: 0px 0px 10px 0px #ccd6e3;
 
 #messages_list li.message h4 {
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+	border-style: none;
+	border-bottom: 2px solid rgba(204,148,130,0.43);
+}
+
+.message h4 a {
+	text-decoration: none;
+	color: #8b4c39;
 }
 
 #messages_list li.message div.content p {
 	margin-top: 0px;
-	font-size: 11px;
-	color: #7d7d7d;
+	font-size: 12px;
+	color: #6c6c6c;
 	line-height: 1.6em;
 	display: block;
-	width: 240px;
+	width: 280px;
 	overflow: auto;
+	font-weight: normal;
+	font-style: normal;
 }
 
 .message div.oembed-container div a img {
-	width: 240px;
+	width: 340px;
 }
 
 a.media {
-	width: 100px !important;
+	width: 300px !important;
 	display: none;
+}
+
+.video {
+	width: 640px;
+	margin: 0px auto;
+	height: 360px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-image: url(../images/video.png);
+}
+
+div.send_us {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+	background-color: #ffe3bf;
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+	color: #b82d13;
+}
+.send_us a {
+	text-align: center;
+	color: #922228;
 }
 

@@ -1,20 +1,16 @@
-%h1 Participa y envíanos tu receta
-- if current_user && current_user.name
-  %h2
-    Hola 
-    %span.name= current_user.name
-    Envíanos tu receta para un Perú adelante
+%h1 Bienvenido al 3er Concurso Perú Gourmet
+
+.video
+
+.send_us
+  = link_to "Envíanos tu receta para un Perú adelante", new_message_path
+
+%h1 Revisa las recetas para un Perú adelante
+%h2 Filtra por la categoría de tu interés
 
 %ul#categories
   - Category.all.each do |c|
     %li= link_to c.name, "#"
-
-= simple_form_for @message do |f|
-  = f.input :title, :label => false
-  = f.input :content, :label => false
-  = f.input :user_id, :as => :hidden, :value => current_user.id if current_user
-  = f.association :category, :label => "Categoría"
-  = f.submit 'Enviar receta'
 
 %ul#messages_list
   = render @messages

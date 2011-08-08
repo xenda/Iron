@@ -1,4 +1,10 @@
-%h1 New message
+%h1 Enviando tu receta al éxito
+
+%h2 Selecciona a qué categoría te quieres enfocar
+
+%ul#categories.options
+  - Category.all.each do |c|
+    %li= link_to c.name, ""
 
 = render 'form'
 

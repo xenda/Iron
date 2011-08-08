@@ -18,6 +18,10 @@ $(function(){
     });
   });
 
+  $("ul.options li a").click(function(){
+    index = $("ul.options li a").index(this)
+  });
+
 
   $(".message").each(function(value){ 
 
@@ -42,7 +46,7 @@ $(function(){
 
   $(".oembed").oembed(null,
     {
-      embedMethod:"append", maxWidth:"240",
+      embedMethod:"append", maxWidth:"340",
       vimeo: { wmode: "transparent"},
       youtube: { wmode: "transparent"},      
       afterEmbed: function(oembedData) {
