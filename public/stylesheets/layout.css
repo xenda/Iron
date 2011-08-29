@@ -2,6 +2,7 @@
 	http://kato.dev/stylesheets/layout.css?1308524046
 	http://kato.dev/stylesheets/layout.css
 	http://localhost:3000/stylesheets/layout.css
+	http://alpha-iron.heroku.com/assets/app.css?1314648869
 */
 
 html {
@@ -510,8 +511,14 @@ div.meta_data {
 	width: 280px;
 }
 
+.message div.oembed-container embed,
+.message div.oembed-container object {
+	width: 280px;
+}
+
+
 a.media {
-	width: 300px !important;
+	width: 280px !important;
 	display: none;
 }
 
@@ -552,6 +559,7 @@ label {
 	color: #d96d30;
 	margin-top: 20px;
 }
+
 .send_us a {
 	text-align: center;
 	color: #922228;
