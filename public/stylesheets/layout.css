@@ -512,7 +512,7 @@ div.meta_data {
 }
 
 .message div.oembed-container embed,
-.message div.oembed-container object, .message div.oembed-container video, .message div {
+.message div.oembed-container object, .message div.oembed-container video {
 	width: 280px;
 }
 

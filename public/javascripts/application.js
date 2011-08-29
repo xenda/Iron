@@ -48,7 +48,7 @@ $(function(){
 
   $(".oembed").oembed(null,
     {
-      embedMethod:"append", maxWidth:"280",
+      embedMethod:"append", maxWidth:"270",
       vimeo: { wmode: "transparent"},
       youtube: { wmode: "transparent"},      
       afterEmbed: function(oembedData) {
