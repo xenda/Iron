@@ -3,6 +3,7 @@
 	http://kato.dev/stylesheets/layout.css
 	http://localhost:3000/stylesheets/layout.css
 */
+
 html {
 	width: 710px;
 }
@@ -16,6 +17,9 @@ body {
 
 div.input {
 	width: 600px;
+	padding-bottom: 20px;
+	background: url(../images/form_back.png) no-repeat -15px -1px;
+	padding-left: 20px;
 }
 
 div.input.select.required {
@@ -34,18 +38,19 @@ box-shadow: 0px 0px 10px 0px #11162e;
 	background-color: white;
 	overflow: auto;
 	padding: 20px;
+	background-image: url(../images/backwhole.jpg);
 }
 
 h1, h2 { font-family: 'Droid Serif', arial, serif; 
 margin: 0px; margin-bottom: 10px;
-font-size: 26px;
-	color: #0352a7;
+font-size: 20px;
+	color: #8d431c;
 }
 
 h2 {
   
-  font-size: 20px;
-  
+  font-size: 16px;
+	color: #d96d30;
 }
 
 h2 span.name {
@@ -54,17 +59,38 @@ h2 span.name {
   
 }
 
-
+div#header {
+	overflow: auto;
+}
 div#logo {
-	-webkit-box-shadow: 0px 0px 10px 0px #11162e;
--moz-box-shadow: 0px 0px 10px 0px #11162e;
-box-shadow: 0px 0px 10px 0px #11162e;
+	overflow: auto;
+	float: left;
+}
 
-	background-image: url(../images/logo.png);
-	height: 84px;
-	width: 501px;
+div#contest {
+	float: right;
+}
+
+div#contest a {
+	background-image: url(/images/title.png);
+	display: block;
+	height: 60px;
+	width: 230px;
 	text-indent: -9999px;
-	margin-bottom: 10px;
+}
+
+div#logo a {
+	/*-webkit-box-shadow: 0px 0px 10px 0px #11162e;
+-moz-box-shadow: 0px 0px 10px 0px #11162e;
+box-shadow: 0px 0px 10px 0px #11162e;*/
+	height: 35px;
+	display: block;
+	width: 220px;
+	float: left;
+	text-indent: -9999px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background: url(../images/inner_logo.png) no-repeat;
 }
 
 div#footnotes_debug {
@@ -219,10 +245,10 @@ form {
     outline: none;
     padding: 8px 10px; }
     form input[type=text]:focus, form input[type=password]:focus, form input[type=email]:focus, form input[type=url]:focus, form input[type=tel]:focus, form textarea:focus {
-      border: 1px solid #c3c9ce;
-      box-shadow: 0 0 2px #0352a7;
-      -moz-box-shadow: 0 0 2px #0352a7;
-      -webkit-box-shadow: 0 0 5px #0352a7;
+      border: 1px solid #8d431c;
+      box-shadow: 0 0 2px #8d431c;
+      -moz-box-shadow: 0 0 2px #8d431c;
+      -webkit-box-shadow: 0 0 5px #8d431c;
       outline: 0px !important; 
       }
 
@@ -421,15 +447,14 @@ ul#messages_list li {
 	padding: 10px;
 	padding-bottom: 10px;
 	padding-top: 20px;
-	width: 280px;
-	
-		-webkit-box-shadow: 0px 0px 1px 0px #6f493a;
+	width: 280px;	
+		-webkit-box-shadow: 0px 0px 1px 1px #6f493a;
 -moz-box-shadow: 0px 0px 1px 0px #6f493a;
-box-shadow: 0px 0px 1px 0px #6f493a;
+box-shadow: 0px 0px 5px 1px rgba(141,141,141,0.48);
 	list-style-type: none;
 	margin-bottom: 20px;
 	overflow: hidden;
-	background: rgba(111,73,58,0.48) url(../images/message_back.png) 260px -26px;
+	background: rgba(141,141,141,0.48) url(/images/message_back2.png) 260px -26px;
 }
 
 div.meta_data {
@@ -482,7 +507,7 @@ div.meta_data {
 }
 
 .message div.oembed-container div a img {
-	width: 340px;
+	width: 280px;
 }
 
 a.media {
@@ -494,27 +519,37 @@ a.media {
 	width: 640px;
 	margin: 0px auto;
 	height: 360px;
-	margin-bottom: 20px;
 	margin-top: 20px;
-	background-image: url(../images/video.png);
 }
 
-div.send_us {
+.video embed, .video object {
+	
+}
+
+.divisor {
+	height: 10px;
+	margin-bottom: 20px;
+	background-image: url(/images/line.png);
+}
+
+div.send_us a {
 	display: block;
 	width: 100%;
+	height: 80px;
 	text-align: center;
-	padding: 10px 0px;
 	margin-bottom: 20px;
-	background-color: #ffe3bf;
+	text-indent: -9999px;
 	font-family: Arial, Helvetica, Geneva, sans-serif;
 	color: #b82d13;
+	background: url(../images/linkreceta.png) no-repeat center;
 }
 
 label {
 	display: block;
-	margin-bottom: 5px;
-	font-family: Arial, Helvetica, Geneva, sans-serif;
-	color: #0352a7;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-family: 'Droid Serif',Arial, Helvetica, Geneva, sans-serif;
+	color: #d96d30;
 	margin-top: 20px;
 }
 .send_us a {
