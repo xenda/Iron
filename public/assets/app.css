@@ -512,7 +512,8 @@ box-shadow: 0px 0px 5px 1px rgba(141,141,141,0.48);
 	list-style-type: none;
 	margin-bottom: 20px;
 	overflow: hidden;
-	background: rgba(141,141,141,0.48) url(/images/message_back2.png?1314805521) 260px -26px;
+  background: url(/images/message_back2.png?1314805521) 260px -26px;
+	/*background: rgba(141,141,141,0.48) url(/images/message_back2.png?1314805521) 260px -26px;*/
 }
 
 div.meta_data {
