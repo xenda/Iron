@@ -66,7 +66,7 @@ html {
 	width: 740px;
 }
 body {
-	background-image: url(../images/background.jpg?1314805521);
+	background-image: url(/images/background.jpg?1314805521);
 
 	margin: 0px;
 	padding: 10px;
@@ -76,7 +76,7 @@ body {
 div.input {
 	width: 600px;
 	padding-bottom: 20px;
-	background: url(../images/form_back.png?1314805521) no-repeat -15px -1px;
+	background: url(/images/form_back.png?1314805521) no-repeat -15px -1px;
 	padding-left: 20px;
 }
 
@@ -96,7 +96,7 @@ box-shadow: 0px 0px 10px 0px #11162e;
 	background-color: white;
 	overflow: auto;
 	padding: 20px;
-	background-image: url(../images/backwhole.jpg?1314805521);
+	background-image: url(/images/backwhole.jpg?1314805521);
 }
 
 h1, h2 { font-family: 'Droid Serif', arial, serif; 
@@ -148,7 +148,7 @@ box-shadow: 0px 0px 10px 0px #11162e;*/
 	text-indent: -9999px;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	background: url(../images/inner_logo.png?1314805521) no-repeat;
+	background: url(/images/inner_logo.png?1314805521) no-repeat;
 }
 
 div#footnotes_debug {
@@ -183,7 +183,7 @@ ul#categories li a {
 	text-decoration: none;
 	font-family: 'Droid Serif', arial, serif; 
 	font-size: 14px;
-	background: #f0f0f0 url(../images/cat_back.png?1314805521) -1px center;
+	background: #f0f0f0 url(/images/cat_back.png?1314805521) -1px center;
 	color: #91322c;
 	text-align: center;
 			-webkit-box-shadow: 0px 0px 1px 0px #6f493a;
@@ -605,7 +605,7 @@ div.send_us a {
 	text-indent: -9999px;
 	font-family: Arial, Helvetica, Geneva, sans-serif;
 	color: #b82d13;
-	background: url(../images/linkreceta.png?1314805521) no-repeat center;
+	background: url(../stylesheets/images/linkreceta.png) no-repeat center;
 }
 
 label {
