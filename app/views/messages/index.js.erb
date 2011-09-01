@@ -28,6 +28,7 @@ $(".message").each(function(value){
       vimeo: { wmode: "transparent"},
       youtube: { wmode: "transparent"},      
       afterEmbed: function(oembedData) {
+   	   	var $container = $('#messages_list');
         $container.imagesLoaded(function(){
           $container.masonry( 'reload' );})
     }
