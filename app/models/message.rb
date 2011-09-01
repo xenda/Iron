@@ -5,6 +5,6 @@ class Message < ActiveRecord::Base
   # validates_presence_of :category_id, :on => :create, :message => "can't be blank"
   validates_presence_of :title, :on => :create, :message => "can't be blank"
 
-  attr_accessor :category_id
+  # attr_accessor :category_id
   
 end

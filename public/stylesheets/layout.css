@@ -568,3 +568,12 @@ label {
 a:hover {
 	background-color: transparent;
 }
+
+ul li a.active {
+  opacity: 0.8 !important;
+  background: white !important;
+  -webkit-box-shadow: 0px 0px 10px 2px #11162e;
+  -moz-box-shadow: 0px 0px 10px 2px #11162e;
+  box-shadow: 0px 0px 10px 2px #11162e;
+
+}

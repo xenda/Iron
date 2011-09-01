@@ -21,6 +21,27 @@ $(function(){
   $("ul.options li a").click(function(){
     // index = $("ul.options li a").index(this)
     $("#message_category_id").val($(this).attr('rel'));
+    $("ul.options li a").removeClass("active");
+    $(this).addClass("active")
+    return false;
+  });
+
+$("ul#categories li a").click(function(){
+    // index = $("ul.options li a").index(this)
+    if ($(this).attr('rel') == "false")
+      field = "/"
+      else
+      field = "?category_id=" + $(this).attr('rel')
+    $.ajax({
+      url: "/messages" + field,
+      dataType: "script",
+      success: function(){
+      }
+    });
+    // $.get("/messages?category_id=" + $(this).attr('rel'))
+
+    $("ul#categories li a").removeClass("active");
+    $(this).addClass("active")
     return false;
   });
 

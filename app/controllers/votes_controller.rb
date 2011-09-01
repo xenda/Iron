@@ -1,12 +1,13 @@
 class VotesController < InheritedResources::Base
   
-  before_filter :authenticate_user!
+  # before_filter :authenticate_user!
 	respond_to :xml, :json, :js
   after_filter :send_to_pusher
 	
   def create
     @vote = Vote.new(params[:vote])
     @vote.user = current_user
+    @vote.user_id ||= 1
     @message = @vote.message
     create!
   end
