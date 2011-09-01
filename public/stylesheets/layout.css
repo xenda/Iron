@@ -549,7 +549,7 @@ div.send_us a {
 	text-indent: -9999px;
 	font-family: Arial, Helvetica, Geneva, sans-serif;
 	color: #b82d13;
-	background: url(images/linkreceta.png) no-repeat center;
+	background: url(/images/linkreceta.png) no-repeat center;
 }
 
 label {
