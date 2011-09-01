@@ -11,7 +11,7 @@
 %h2 Filtra por la categoría de tu interés
 
 %ul#categories
-  %li= link_to "Todos", "/", :rel => "false"
+  / %li= link_to "Todos", "/", :rel => "false"
   - Category.all.each do |c|
     %li= link_to c.name, "#", :rel => c.id
 
