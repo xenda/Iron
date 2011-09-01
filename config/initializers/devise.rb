@@ -35,11 +35,11 @@ Devise.setup do |config|
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
   config.case_insensitive_keys = [ :email ]
-  config.facebook_api_key = "136578643087393"
-  config.facebook_api_secret = "4d543e7427a437b03fecef6618ce0585"
+  config.facebook_api_key = "110963292340399"
+  config.facebook_api_secret = "de0c0755e628655726cdd497aab1ef49"
   config.facebook_permissions = 'offline_access,email,publish_stream'
   config.facebook_canvas_app = true
-  config.facebook_canvas_url = 'http://apps.facebook.com/alpha-kato/'
+  config.facebook_canvas_url = 'http://apps.facebook.com/alpha-iron/'
   # Tell if authentication through request.params is enabled. True by default.
   # config.params_authenticatable = true
 
