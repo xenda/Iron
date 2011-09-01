@@ -34,6 +34,53 @@
   });
   </script>
   <%= include_javascripts :app %> 
-  <script src="http://js.pusherapp.com/1.8/pusher.min.js" type="text/javascript"></script>    
+  <script src="http://js.pusherapp.com/1.8/pusher.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    window.fbAsyncInit = function() {
+
+      FB.init({
+      appId : '136578643087393',
+      status : true, // check login status
+      cookie : true, // enable cookies to allow the server to access the session
+      xfbml : true,
+      oauth : true //
+      });
+
+      window.setTimeout(function() {
+        FB.Canvas.setAutoResize();
+      }, 250);
+
+      window.fbAsyncInit = function() {
+        FB.Canvas.setSize();
+      }
+      // Do things that will sometimes call sizeChangeCallback()
+      function sizeChangeCallback() {
+        FB.Canvas.setSize();
+      }
+
+
+    };
+
+        FB.getLoginStatus(function(response) {
+       if (response.session) {
+         // console.log('got session, ok to post');
+       } else {
+      FB.login(function(response) {
+        if (response.session) {
+          // console.log('user logged in');
+        } else {
+          // console.log('canceled login');
+        }
+      });
+        }
+      });
+
+    (function() {
+      var e = document.createElement('script'); e.async = true;
+      e.src = document.location.protocol +
+        '//connect.facebook.net/en_US/all.js';
+      document.getElementById('fb-root').appendChild(e);
+    }());
+  </script>
 </body>
 </html>
